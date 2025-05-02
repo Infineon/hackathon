@@ -51,9 +51,9 @@ Of course this is only an example to undestand how everything works - doing it b
 
 <img src="./img/eric.png" alt="Eric" height="150"/>
 
-**Julian** (Senior Staff Embedded Systems Engineer)
+**Olaf** (Principal Engineer)
 
-<img src="./img/julian.png" alt="Julian" height="150"/>
+<img src="./img/olaf.png" alt="Julian" height="150"/>
 
 ### How to reach us?
 Please [open an issue](https://github.com/Infineon/hackathon/issues) in this repository or just talk to us at the venue.

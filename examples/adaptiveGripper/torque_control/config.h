@@ -8,4 +8,6 @@
 // Enable or disable commander functionality, please check: https://docs.simplefoc.com/commander_interface
 #define ENABLE_COMMANDER false
 
+#define ENABLE_READ_ANGLE false
+
 #endif // CONFIG_H

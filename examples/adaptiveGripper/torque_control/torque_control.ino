@@ -93,7 +93,7 @@ void setup() {
   motor.linkDriver(&driver);
 
   // aligning voltage 
-  motor.voltage_sensor_align = 5;
+  motor.voltage_sensor_align = 2;
   // choose FOC modulation (optional)
   motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
   // set motion control loop to be used
@@ -162,6 +162,10 @@ void loop() {
 #endif
   // update angle sensor data
   tle5012Sensor.update();
+#if ENABLE_READ_ANGLE
+  Serial.print(tle5012Sensor.getSensorAngle());
+  Serial.println("");
+#endif
   // main FOC algorithm function
   // the faster you run this function the better
   // Arduino UNO loop  ~1kHz

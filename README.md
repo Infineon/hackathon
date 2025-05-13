@@ -9,7 +9,7 @@
 ## Running the Example
 
 ### Overview
-The example is meant to help you to understand  how the gripper can be programmed and how you can communicate, with the motor controller (IFX007T Shield 2 Go), the angle sensor (TLE5012B E1000) and the 3D Magnetic Sensor.
+The example is meant to help you to understand  how the gripper can be programmed and how you can communicate, with the motor controller (IFX007T Shield 2Go), the angle sensor (TLE5012B E1000) and the 3D Magnetic Sensor.
 It's not mandatory to run the example or to follow the same approach, but it is recommended that you can understand the whole system and also FOC.
 Feel free to refer to the documention pages linked below and follow a different approach.
 
@@ -19,12 +19,13 @@ Please start by installing XMC for Arduino and all the requiered libraries.
 
 
 #### Installation of XMC for Arduino
-Follow the instructions from the [slides](./topic_introduction.pdf) or this [website](https://xmc-arduino.readthedocs.io/en/latest/installation-instructions.html) and make sure to use the **alternative installation link** provided there.
+Follow the instructions from this [website](https://xmc-arduino.readthedocs.io/en/latest/installation-instructions.html) and make sure to use the **alternative installation link** provided here:
+https://github.com/LinjingZhang/XMC-for-Arduino/releases/download/V3.5.3-beta/package_infineon_index.json
 
 
 #### Installation of the XENSIV™ Angle Sensor TLx5012B library for Arduino
 The [Infineon TLE5012B E1000](https://www.infineon.com/cms/de/product/sensor/magnetic-sensors/magnetic-position-sensors/angle-sensors/tle5012b-e1000/) angle sensor is used to get the postion from the BLDC motor. A diametrically magnet is attached to the motor, so the we get the postion from the motor.
-You can find it in the Arduino library manager by looking for "*XENSIV™ Angle Sensor TLx5012B*".
+You can find the Arduino library manager by looking for "*XENSIV™ Angle Sensor TLx5012B*".
 
 #### Installation of 3D Magnetic Sensor library for Arduino
 The [Infineon 3D Magnetic Sensor](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/3d-magnetics/tle493d-a2b6/) messures the magnetic field in 3 directions (X, Y and Z).
@@ -32,7 +33,7 @@ You can find it in the Arduino library manager by looking for "*XENSIV™ 3D Mag
 
 
 #### Installation of Simple FOC library for Arduino
-The [Simple FOC library](https://docs.simplefoc.com)(Simple Field Oriented Control)  is an open-source Arduino-compatible library designed to make it easy to control BLDC and PMSM motors using Field Oriented Control (FOC).
+The [Simple FOC library] (https://docs.simplefoc.com)(Simple Field Oriented Control)  is an open-source Arduino-compatible library designed to make it easy to control BLDC and PMSM motors using Field Oriented Control (FOC).
 
 You can find it in the Arduino library manager by looking for "*XENSIV™ 3D Magnetic Sensor TLx493D*".
 
@@ -43,8 +44,8 @@ git clone https://github.com/Infineon/hackathon
 ```
 
 #### Compile & Run the Example
-Now that you have the example on your computer you can open it in the Arduino IDE (it's located in `examples/adaptiveGripper/torque_control/`)
-Afterwards, make sure you have connected the gripper to your computer and selected the right board (*XMC4700 Relax Kit*) and serial port.
+Now that you have the example on your computer you can open it in the Arduino IDE (it's located in `examples/adaptiveGripper/torque_control/`).
+Afterwards, make sure you have in the same folder the files "TLE5012Sensor.h, TLE5012Sensor.cpp, control.h", then you can connected the gripper to your computer and selected the right board (*XMC4700 Relax Kit*) and serial port.
 Now, you can compile & upload the example.
 
 Of course this is only an example to undestand how everything works - So now it is your task to grasp every object :)

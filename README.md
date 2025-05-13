@@ -42,11 +42,14 @@ Afterwards you can clone this git repo:
 ```
 git clone https://github.com/Infineon/hackathon
 ```
-
 #### Compile & Run the Example
 Now that you have the example on your computer you can open it in the Arduino IDE (it's located in `examples/adaptiveGripper/torque_control/`).
-Afterwards, make sure you have in the same folder the files "TLE5012Sensor.h, TLE5012Sensor.cpp, control.h", then you can connected the gripper to your computer and selected the right board (*XMC4700 Relax Kit*) and serial port.
+Afterwards, install the following files in you SimpleFOC library folder:
+"TLE5012Sensor.h, TLE5012Sensor.cpp".
+Then you can connected the gripper to your computer and selected the right board (*XMC4700 Relax Kit*) and serial port.
 Now, you can compile & upload the example.
+
+
 
 Of course this is only an example to undestand how everything works - So now it is your task to grasp every object :)
 
@@ -69,7 +72,7 @@ And if you have questions or a problem just come to us, we may help you or just 
 
 <img src="./img/eric.png" alt="Eric" height="150"/>
 
-**Linjing** (Embedded Systems Engineer)
+**Linjing** (Embedded Software Engineer)
 
 <img src="./img/linjing.jpg" alt="Linjing" height="150"/>
 

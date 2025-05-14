@@ -65,6 +65,7 @@ And if you have questions or a problem just come to us, we may help you or just 
 * [TLE5012B E1000](https://www.infineon.com/cms/de/product/sensor/magnetic-sensors/magnetic-position-sensors/angle-sensors/tle5012b-e1000/)
 * [Simple FOC Arduino library on Github](https://github.com/simplefoc/Arduino-FOC)
 * [Simple FOC Arduino library docs](https://docs.simplefoc.com)
+* [Infineon Team on Hacster.io](https://www.hackster.io/Infineon_Team/projects)
 
 ## Infineon Team
 

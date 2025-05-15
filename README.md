@@ -35,7 +35,7 @@ You can find it in the Arduino library manager by looking for "*XENSIV™ 3D Mag
 #### Installation of Simple FOC library for Arduino
 The [Simple FOC library] (https://docs.simplefoc.com)(Simple Field Oriented Control)  is an open-source Arduino-compatible library designed to make it easy to control BLDC and PMSM motors using Field Oriented Control (FOC).
 
-You can find it in the Arduino library manager by looking for "*XENSIV™ 3D Magnetic Sensor TLx493D*".
+You can find it in the Arduino library manager by looking for "*SimpleFOC*".
 
 #### Cloning this Repository
 Afterwards you can clone this git repo:

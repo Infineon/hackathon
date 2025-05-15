@@ -1,0 +1,88 @@
+// Open loop motor control example
+ #include <SimpleFOC.h>
+
+
+// BLDC motor instance BLDCMotor (polepairs, motor phase resistance, motor KV
+// rating, motor phase inductance)
+BLDCMotor motor = BLDCMotor(
+    7, 0.24, 360,
+    0.000133); // 7 pole pairs, 0.24 Ohm phase resistance, 360 KV and 0.000133H
+// you can find more data of motor in the doc
+
+// define driver pins
+const int U = 11;
+const int V = 10;
+const int W = 9;
+const int EN_U = 6;
+const int EN_V = 5;
+const int EN_W = 3;
+
+// BLDC driver instance
+BLDCDriver3PWM driver = BLDCDriver3PWM(U, V, W, EN_U, EN_V, EN_W);
+//target variable
+float target_position = 0;
+
+// instantiate the commander
+Commander command = Commander(Serial);
+void doTarget(char* cmd) { command.scalar(&target_position, cmd); }
+void doLimit(char* cmd) { command.scalar(&motor.voltage_limit, cmd); }
+void doVelocity(char* cmd) { command.scalar(&motor.velocity_limit, cmd); }
+
+void setup() {
+
+  // use monitoring with serial 
+  Serial.begin(115200);
+  // enable more verbose output for debugging
+  // comment out if not needed
+  SimpleFOCDebug::enable(&Serial);
+
+  // driver config
+  // power supply voltage [V]
+  driver.voltage_power_supply = 12;
+  // limit the maximal dc voltage the driver can set
+  // as a protection measure for the low-resistance motors
+  // this value is fixed on startup
+  driver.voltage_limit = 6;
+  if(!driver.init()){
+    Serial.println("Driver init failed!");
+    return;
+  }
+  // link the motor and the driver
+  motor.linkDriver(&driver);
+
+  // limiting motor movements
+  // limit the voltage to be set to the motor
+  // start very low for high resistance motors
+  // currnet = resistance*voltage, so try to be well under 1Amp
+  motor.voltage_limit = 3;   // [V]
+  // limit/set the velocity of the transition in between 
+  // target angles
+  motor.velocity_limit = 5; // [rad/s] cca 50rpm
+  // open loop control config
+  motor.controller = MotionControlType::angle_openloop;
+
+  // init motor hardware
+  if(!motor.init()){
+    Serial.println("Motor init failed!");
+    return;
+  }
+
+  // add target command T
+  command.add('T', doTarget, "target angle");
+  command.add('L', doLimit, "voltage limit");
+  command.add('V', doLimit, "movement velocity");
+
+  Serial.println("Motor ready!");
+  Serial.println("Set target position [rad]");
+  _delay(1000);
+}
+
+void loop() {
+  // open  loop angle movements
+  // using motor.voltage_limit and motor.velocity_limit
+  // angles can be positive or negative, negative angles correspond to opposite motor direction
+  motor.move(target_position);
+  
+  // user communication
+  command.run();
+}

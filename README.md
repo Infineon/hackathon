@@ -59,7 +59,7 @@ And if you have questions or a problem just come to us, we may help you or just 
 
 **Qian** (Embedded System Working Student)
 
-<img src="./img/qian.jpg" alt="Qian" height="150"/>
+<img src="./img/Qian.jpg" alt="Qian" height="150"/>
 
 ### How to reach us?
 Please [open an issue](https://github.com/Infineon/hackathon/issues) in this repository or just talk to us at the venue.

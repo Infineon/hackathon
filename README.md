@@ -30,12 +30,12 @@ If you can not install our test model, please make sure that you've installed [M
 
 If it is not preselected here is the list that we have installed:
 Eclipse IDE for ModusToolbox™
-Arm Gnu Toolchain (GCC) 14.2.1
-ModusToolbox™ Tools Package 3.6.0 (some participants also needed 3.8.0) so maybe install both?
-Microsoft VS Code
-DEEPCRAFT™ Studio
-ModusToolbox™ Edge Protect Secruity Suite
-ModusToolbox™ Programming tools
+Arm Gnu Toolchain (GCC) 14.2.1  
+ModusToolbox™ Tools Package 3.6.0 (some participants also needed 3.8.0) so maybe install both?  
+Microsoft VS Code  
+DEEPCRAFT™ Studio  
+ModusToolbox™ Edge Protect Secruity Suite  
+ModusToolbox™ Programming tools  
 ModusToolbox™ Machine learning pack
 
 And please make sure that there are no spaces in your folders name. :)
@@ -43,15 +43,25 @@ And please make sure that there are no spaces in your folders name. :)
 
 
 
-If you need a guide here is also a guide. :)
-[Eclipse ModusToolbox™ installation guide](https://www.infineon.com/row/public/documents/30/68/infineon-modustoolbox-software-installation-guide-gettingstarted-en.pdf)
+If you need a guide here is also a guide. 
+[Eclipse ModusToolbox™ installation guide](https://www.infineon.com/row/public/documents/30/68/infineon-modustoolbox-software-installation-guide-gettingstarted-en.pdf) :)
 
 
 #### Cloning this Repository
 Afterwards you can clone this git repo:
 ```
 git clone https://github.com/Infineon/hackathon
+
 ```
+
+### Flasing the Data collection programm again
+
+If you flashed your microcontroller with a different program and you want to get data than the easiest way is to go on this (website)[https://osts.infineon.com/devkit/ai-mcu-applications?id=5] flash the model.
+
+Just press gestuere dection and than the + sign on the right. And select your board.
+We discoverd that some brwosers are not detection the connected board.
+We have good experience with EDGE and Opera.
+
 #### Compile & Run the Example
 Now that you have the example on your computer you can open Eclipse ModusToolbox™ and import or copy the project in you Eclipse ModusToolbox™ folder.
 

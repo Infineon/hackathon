@@ -26,6 +26,23 @@ Just download DEEPCRAFT™ Studio from this [link](https://softwaretools.infineo
 #### Installation of Eclipse ModusToolbox™
 If you want to install Eclipse ModusToolbox™ please follow this [link](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.mtbeclipse).
 
+If you can not install our test model, please make sure that you've installed [ModusToolbox™](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software) and all the default software which is preselected.
+
+If it is not preselected here is the list that we have installed:
+Eclipse IDE for ModusToolbox™
+Arm Gnu Toolchain (GCC) 14.2.1
+ModusToolbox™ Tools Package 3.6.0 (some participants also needed 3.8.0) so maybe install both?
+Microsoft VS Code
+DEEPCRAFT™ Studio
+ModusToolbox™ Edge Protect Secruity Suite
+ModusToolbox™ Programming tools
+ModusToolbox™ Machine learning pack
+
+And please make sure that there are no spaces in your folders name. :)
+
+
+
+
 If you need a guide here is also a guide. :)
 [Eclipse ModusToolbox™ installation guide](https://www.infineon.com/row/public/documents/30/68/infineon-modustoolbox-software-installation-guide-gettingstarted-en.pdf)
 

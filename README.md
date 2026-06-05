@@ -24,9 +24,9 @@ Just download DEEPCRAFT™ Studio from this [link](https://softwaretools.infineo
 
 
 #### Installation of Eclipse ModusToolbox™
-If you want to install Eclipse ModusToolbox™ please follow this [link](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.mtbeclipse).
+If you want to install Eclipse ModusToolbox™ please follow this [link](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolboxsetup?_gl=1*1rpouzp*_gcl_dc*R0NMLjE3NzczODY2MzkuYzA2MzBiMTJmN2YwMTRhYjU3ZGE2MmUyMzM3OTdlZWQ.*_gcl_au*MTg0NTI0OTg5NC4xNzgwNjY2NDc2*_ga*ODIyMTgzMjg2LjE3NzI3MTM0NjM.*_ga_KVD0BL538B*czE3ODA2NjY0NzYkbzM1JGcwJHQxNzgwNjY2NDc2JGo2MCRsMCRoNjA1NzQ4MjAw).
 
-If you can not install our test model, please make sure that you've installed [ModusToolbox™](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software) and all the default software which is preselected.
+If you can not install our test model, please make sure that you've installed [ModusToolbox™ Setup](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software) and all the default software which is preselected.
 
 If it is not preselected here is the list that we have installed:
 Eclipse IDE for ModusToolbox™

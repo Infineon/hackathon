@@ -56,7 +56,7 @@ git clone https://github.com/Infineon/hackathon
 
 ### Flasing the Data collection programm again
 
-If you flashed your microcontroller with a different program and you want to get data than the easiest way is to go on this (website)[https://osts.infineon.com/devkit/ai-mcu-applications?id=5] flash the model.
+If you flashed your microcontroller with a different program and you want to get data than the easiest way is to go on this [website](https://osts.infineon.com/devkit/ai-mcu-applications?id=5) flash the model.
 
 Just press gestuere dection and than the + sign on the right. And select your board.
 We discoverd that some brwosers are not detection the connected board.
@@ -84,9 +84,9 @@ And if you have questions or a problem just come to us, we may help you or just 
 
 <img src="./img/eric.png" alt="Eric" height="150"/>
 
-**Qian** (Embedded System Working Student)
+**Olaf** (Principal Engineer)
 
-<img src="./img/Qian.jpg" alt="Qian" height="150"/>
+<img src="./img/Olaf.jpg" alt="Qian" height="150"/>
 
 ### How to reach us?
-Please [open an issue](https://github.com/Infineon/hackathon/issues) in this repository or just talk to us at the venue.
+Please [open an issue](https://github.com/Infineon/hackathon/issues) in this repository or just talk to us. :)

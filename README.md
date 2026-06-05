@@ -59,6 +59,8 @@ git clone https://github.com/Infineon/hackathon
 If you flashed your microcontroller with a different program and you want to get data than the easiest way is to go on this [website](https://osts.infineon.com/devkit/ai-mcu-applications?id=5) flash the model.
 
 Just press gestuere dection and than the + sign on the right. And select your board.
+On the left bottom Experience Application with DEEPCRAFT™ Studio will appear.
+Press on continue.
 We discoverd that some brwosers are not detection the connected board.
 We have good experience with EDGE and Opera.
 
